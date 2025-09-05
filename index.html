@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Jersey+25&family=Konkhmer+Sleokchher&family=Rubik+Iso&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="dashboard">
+      <h1>Dashboard</h1>
+      <ul>
+        <li>Calendar</li>
+        <li>Reminders</li>
+        <li>Completed Tasks</li>
+        <li>Settings</li>
+        <li>Feedback/Support</li>
+        <li>FAQs</li>
+      </ul>
+    </div>
+
+    <div class="middle">
+      <div class="Greetings">
+        <h1>Hello, Good Morning</h1>
+      </div>
+
+      <div class="tasks">
+        <div>
+          <h1>Today's Task</h1>
+          <div class="addTask">
+            <form action="" class="input-area">
+              <input type="text" name="" id="task-input" placeholder="Add a new task..">
+              <button type="submit" id="add-task-btn">Add Task</button>
+            </form>
+            <div class="todos-container"><ul id="task-list"></ul></div>
+          </div>
+          <ul id="tasks">
+          </ul>
+          <button class = "delete-allbtn" id="delete-all-btn">Delete All</button>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="progress">
+        <div class="circle">
+          <svg width="200" height="200">
+            <circle class="outer" cx="100" cy="100" r="90" />
+            <circle class="inner" cx="100" cy="100" r="90" />
+          </svg>
+          <div class="text">
+            <h2>0%</h2>
+            <p>DONE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="notes">
+          <h1>Notes</h1>
+          <div class="note"></div>
+          <div class="note"></div>
+          <div class="note"></div>
+      </div>
+    </div>
+
+  </div>
+
+  
+</body>
+<script src="index.js"></script> 
+</html>
